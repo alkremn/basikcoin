@@ -15,3 +15,55 @@ body {
 .basik-image {
     width: 250px;
 }
+
+.images-right-container {
+    display: flex; 
+    flex-direction: column;
+}
+
+.images-right-container img:nth-child(1) {
+    transform: rotate(-30deg);
+    width: 350px;
+}
+
+.images-right-container img:nth-child(2) {
+    transform: rotate(20deg);
+    width: 200px;
+}
+
+.images-row {
+    height: 180px;
+}
+
+.images-row > img:nth-child(1) {
+    position: absolute;
+    transform: rotate(30deg);
+    width: 160px;
+    right: 100px;
+}
+
+.images-row > img:nth-child(2) {
+    position: absolute;
+    transform: rotate(10deg);
+    width: 100px;
+    bottom: 0;
+}
+
+.images-right-container img:nth-child(4) {
+    transform: rotate(-30deg);
+    width: 300px;
+}
+
+.main-container {
+    display: flex; 
+    flex-direction: column;
+    flex: 1;
+    gap: 14px;;
+}
+
+.main-container a {
+    color: black;
+    font-size: 43px;
+    font-weight: bold;
+
+}
