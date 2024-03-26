@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    overflow: hidden;
 }
 
 .bg-image {
@@ -24,6 +25,10 @@ body {
 .images-right-container img:nth-child(1) {
     transform: rotate(-30deg);
     width: 350px;
+}
+
+.animated {
+    animation: coin_rotation infinite 15s linear;
 }
 
 .images-right-container img:nth-child(2) {
@@ -65,5 +70,14 @@ body {
     color: black;
     font-size: 43px;
     font-weight: bold;
+}
 
+
+@keyframes coin_rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
